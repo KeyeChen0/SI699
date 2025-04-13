@@ -1,0 +1,14 @@
+{"time":"2025-03-28T12:53:13.3719399-04:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"d:\\Course_works\\SI699\\model1\\src\\wandb\\run-20250328_125313-gixalz1l\\logs\\debug-core.log"}
+{"time":"2025-03-28T12:53:13.6112381-04:00","level":"INFO","msg":"created new stream","id":"gixalz1l"}
+{"time":"2025-03-28T12:53:13.6118344-04:00","level":"INFO","msg":"stream: started","id":"gixalz1l"}
+{"time":"2025-03-28T12:53:13.6118344-04:00","level":"INFO","msg":"handler: started","stream_id":"gixalz1l"}
+{"time":"2025-03-28T12:53:13.6118344-04:00","level":"INFO","msg":"writer: Do: started","stream_id":"gixalz1l"}
+{"time":"2025-03-28T12:53:13.6118344-04:00","level":"INFO","msg":"sender: started","stream_id":"gixalz1l"}
+{"time":"2025-03-28T12:53:13.7962914-04:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-28T12:53:14.8334515-04:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-03-28T12:53:30.0600437-04:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-03-28T12:56:47.8287306-04:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-03-28T12:57:22.1371474-04:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-03-28T12:57:22.6734015-04:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-03-28T12:57:25.4287619-04:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-03-28T12:57:27.4392244-04:00","level":"INFO","msg":"Pausing system monitor"}

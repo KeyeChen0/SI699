@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Recommendations</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f2f5;
+      padding: 20px;
+      color: #333;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 8px;
+      padding: 2rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 1.5rem;
+      color: #007bff;
+    }
+    .recommendation {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    .game-info {
+      display: flex;
+      align-items: center;
+    }
+    .game-info img {
+      width: 80px;
+      height: auto;
+      border-radius: 4px;
+      margin-right: 10px;
+    }
+    .heart {
+      font-size: 24px;
+      cursor: pointer;
+      color: #ccc;
+      transition: color 0.3s ease;
+    }
+    .heart.liked {
+      color: red;
+    }
+    p {
+      text-align: center;
+      margin-top: 1.5rem;
+    }
+    a {
+      text-decoration: none;
+      color: #007bff;
+      transition: color 0.3s ease;
+    }
+    a:hover {
+      color: #0056b3;
+    }
+  </style>
+  <script>
+    function toggleLike(heartElement, appId) {
+      heartElement.classList.toggle('liked');
+      let liked = heartElement.classList.contains('liked');
+      fetch('/toggle_like', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ user: '{{ user }}', app_id: appId, liked: liked })
+      });
+    }
+  </script>
+</head>
+<body>
+  <!-- <pre>
+    {{ recommendations }}
+  </pre> -->
+  
+  <div class="container">
+    <h1>Recommended for {{ user }}</h1>
+    {% if recommendations|length == 0 %}
+      <p>No recommendations available at this time.</p>
+    {% else %}
+      {% for rec in recommendations %}
+        <div class="recommendation">
+          <div class="game-info">
+            <a href="https://store.steampowered.com/app/{{ rec[0] }}" target="_blank">
+              <img src="https://steamcdn-a.akamaihd.net/steam/apps/{{ rec[0] }}/capsule_sm_120.jpg" alt="Game Image">
+            </a>
+            <strong>{{ rec[1]}}</strong>
+          </div>
+          <span class="heart" onclick="toggleLike(this, {{ rec[0] }})">❤</span>
+        </div>
+      {% endfor %}
+    {% endif %}
+    <p><a href="/dashboard?user={{ user }}">Back to Dashboard</a></p>
+  </div>
+</body>
+</html>

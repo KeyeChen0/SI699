@@ -1,0 +1,5 @@
+C:\Users\19441\AppData\Local\Temp\ipykernel_56076\258238084.py:87: FutureWarning:
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.barplot(x=list(metrics.keys()), y=list(metrics.values()), palette="viridis")

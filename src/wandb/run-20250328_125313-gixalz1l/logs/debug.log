@@ -1,0 +1,60 @@
+2025-03-28 12:53:13,314 INFO    MainThread:23892 [wandb_setup.py:_flush():67] Current SDK version is 0.19.7
+2025-03-28 12:53:13,314 INFO    MainThread:23892 [wandb_setup.py:_flush():67] Configure stats pid to 23892
+2025-03-28 12:53:13,315 INFO    MainThread:23892 [wandb_setup.py:_flush():67] Loading settings from C:\Users\19441\.config\wandb\settings
+2025-03-28 12:53:13,315 INFO    MainThread:23892 [wandb_setup.py:_flush():67] Loading settings from d:\Course_works\SI699\model1\src\wandb\settings
+2025-03-28 12:53:13,315 INFO    MainThread:23892 [wandb_setup.py:_flush():67] Loading settings from environment variables
+2025-03-28 12:53:13,315 INFO    MainThread:23892 [wandb_init.py:setup_run_log_directory():647] Logging user logs to d:\Course_works\SI699\model1\src\wandb\run-20250328_125313-gixalz1l\logs\debug.log
+2025-03-28 12:53:13,315 INFO    MainThread:23892 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to d:\Course_works\SI699\model1\src\wandb\run-20250328_125313-gixalz1l\logs\debug-internal.log
+2025-03-28 12:53:13,315 INFO    MainThread:23892 [wandb_init.py:monkeypatch_ipython():599] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x000002723D6466E0>
+2025-03-28 12:53:13,315 INFO    MainThread:23892 [wandb_init.py:init():761] calling init triggers
+2025-03-28 12:53:13,315 INFO    MainThread:23892 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'_wandb': {}}
+2025-03-28 12:53:13,315 INFO    MainThread:23892 [wandb_init.py:init():784] starting backend
+2025-03-28 12:53:13,315 INFO    MainThread:23892 [wandb_init.py:init():788] sending inform_init request
+2025-03-28 12:53:13,369 INFO    MainThread:23892 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=spawn, using: spawn
+2025-03-28 12:53:13,370 INFO    MainThread:23892 [wandb_init.py:init():803] backend started and connected
+2025-03-28 12:53:13,374 INFO    MainThread:23892 [wandb_run.py:_label_probe_notebook():1204] probe notebook
+2025-03-28 12:53:13,375 INFO    MainThread:23892 [wandb_run.py:_label_probe_notebook():1214] Unable to probe notebook: 'charmap' codec can't decode byte 0x8d in position 1034: character maps to <undefined>
+2025-03-28 12:53:13,375 INFO    MainThread:23892 [wandb_init.py:init():896] updated telemetry
+2025-03-28 12:53:13,376 INFO    MainThread:23892 [wandb_init.py:init():920] communicating run to backend with 90.0 second timeout
+2025-03-28 12:53:13,794 INFO    MainThread:23892 [wandb_init.py:init():995] starting run threads in backend
+2025-03-28 12:53:14,013 WARNING MainThread:23892 [wandb_init.py:init():1475] interrupted
+Traceback (most recent call last):
+  File "d:\Anaconda3\envs\nlp\lib\site-packages\wandb\sdk\wandb_init.py", line 1471, in init
+    return wi.init(run_settings, run_config)
+  File "d:\Anaconda3\envs\nlp\lib\site-packages\wandb\sdk\wandb_init.py", line 1036, in init
+    run._on_start()
+  File "d:\Anaconda3\envs\nlp\lib\site-packages\wandb\sdk\wandb_run.py", line 2412, in _on_start
+    self._backend.interface.publish_python_packages(working_set())
+  File "d:\Anaconda3\envs\nlp\lib\site-packages\wandb\sdk\interface\interface.py", line 345, in publish_python_packages
+    for pkg in working_set:
+  File "d:\Anaconda3\envs\nlp\lib\site-packages\wandb\util.py", line 1937, in working_set
+    yield InstalledDistribution(key=d.metadata["Name"], version=d.version)
+  File "d:\Anaconda3\envs\nlp\lib\importlib\metadata\__init__.py", line 605, in metadata
+    self.read_text('METADATA')
+  File "d:\Anaconda3\envs\nlp\lib\importlib\metadata\__init__.py", line 927, in read_text
+    return self._path.joinpath(filename).read_text(encoding='utf-8')
+  File "d:\Anaconda3\envs\nlp\lib\pathlib.py", line 1134, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+  File "d:\Anaconda3\envs\nlp\lib\pathlib.py", line 1119, in open
+    return self._accessor.open(self, mode, buffering, encoding, errors,
+  File "d:\Anaconda3\envs\nlp\lib\codecs.py", line 309, in __init__
+    def __init__(self, errors='strict'):
+KeyboardInterrupt
+2025-03-28 12:53:14,832 INFO    MainThread:23892 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-03-28 12:53:14,832 INFO    MainThread:23892 [wandb_init.py:_pause_backend():564] pausing backend
+2025-03-28 12:53:30,059 INFO    MainThread:23892 [wandb_init.py:_resume_backend():569] resuming backend
+2025-03-28 12:53:30,085 INFO    MainThread:23892 [wandb_init.py:setup_run_log_directory():647] Logging user logs to d:\Course_works\SI699\model1\src\wandb\run-20250328_125330-24mruuzq\logs\debug.log
+2025-03-28 12:53:30,087 INFO    MainThread:23892 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to d:\Course_works\SI699\model1\src\wandb\run-20250328_125330-24mruuzq\logs\debug-internal.log
+2025-03-28 12:53:30,087 INFO    MainThread:23892 [wandb_init.py:init():761] calling init triggers
+2025-03-28 12:53:30,087 INFO    MainThread:23892 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'_wandb': {}}
+2025-03-28 12:53:30,087 INFO    MainThread:23892 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-03-28 12:56:47,827 INFO    MainThread:23892 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-03-28 12:56:47,827 INFO    MainThread:23892 [wandb_init.py:_pause_backend():564] pausing backend
+2025-03-28 12:57:22,136 INFO    MainThread:23892 [wandb_init.py:_resume_backend():569] resuming backend
+2025-03-28 12:57:22,672 INFO    MainThread:23892 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-03-28 12:57:22,672 INFO    MainThread:23892 [wandb_init.py:_pause_backend():564] pausing backend
+2025-03-28 12:57:25,427 INFO    MainThread:23892 [wandb_init.py:_resume_backend():569] resuming backend
+2025-03-28 12:57:27,438 INFO    MainThread:23892 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-03-28 12:57:27,438 INFO    MainThread:23892 [wandb_init.py:_pause_backend():564] pausing backend

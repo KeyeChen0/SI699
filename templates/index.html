@@ -1,0 +1,132 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <script>
+        function guestLogin() {
+            window.location.href = "/guest";
+        }
+    </script>
+</head>
+<body>
+    <h2>Login</h2>
+    <form action="/login" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+        <button type="submit">Login</button>
+    </form>
+    <br>
+    <button onclick="guestLogin()">Continue as a Guest</button>
+    <br>
+    <a href="/signup">Sign Up</a> | <a href="/forgot">Forgot Password?</a>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f2f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+    .container {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      width: 350px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    h2 {
+      margin-bottom: 1.5rem;
+      color: #333;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+    }
+    label {
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      color: #555;
+      text-align: left;
+    }
+    input {
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+    button {
+      padding: 0.75rem;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-bottom: 1rem;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    .link-group {
+      margin-top: 1rem;
+      font-size: 0.9rem;
+    }
+    .link-group a {
+      text-decoration: none;
+      color: #007bff;
+      transition: color 0.3s ease;
+      margin: 0 0.5rem;
+    }
+    .link-group a:hover {
+      color: #0056b3;
+    }
+  </style>
+  <script>
+    function guestLogin() {
+      window.location.href = "/guest";
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h2>Login</h2>
+    <form action="/login" method="POST">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+      
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      
+      <button type="submit">Login</button>
+    </form>
+    <button onclick="guestLogin()">Continue as a Guest</button>
+    <div class="link-group">
+      <a href="/signup">Sign Up</a> | <a href="/forgot">Forgot Password?</a>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Browsing History</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f2f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .container {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      width: 90%;
+      max-width: 1000px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      overflow-x: auto;
+    }
+    h1 {
+      margin-bottom: 1rem;
+      color: #333;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+      font-size: 14px;
+    }
+    th, td {
+      padding: 12px;
+      border: 1px solid #ddd;
+      text-align: center;
+      white-space: nowrap;
+    }
+    th {
+      background-color: #007bff;
+      color: white;
+    }
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    a {
+      text-decoration: none;
+      color: #007bff;
+      transition: color 0.3s ease;
+    }
+    a:hover {
+      color: #0056b3;
+    }
+    .game-img {
+      width: 80px;
+      height: auto;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Browsing History</h1>
+    <p>Welcome, {{ user }}! Here is your browsing history sorted from most recent.</p>
+    <div style="overflow-x: auto;">
+      <table>
+        <tr>
+          <th>Date</th>
+          <th>App ID</th>
+          <!-- <th>Is Recommended</th> -->
+          <th>Cumulative Review</th>
+          <th>Cumulative Recommended</th>
+          <th>Cumulative Not Recommend</th>
+          <th>Recommend Ratio</th>
+        </tr>
+        {% for entry in history %}
+        <tr>
+          <td>{{ entry[0] }}</td>
+          <td>
+            <a href="https://store.steampowered.com/app/{{ entry[1] }}" target="_blank">
+              <img class="game-img" src="https://steamcdn-a.akamaihd.net/steam/apps/{{ entry[1] }}/capsule_sm_120.jpg" alt="Game Image">
+            </a>
+            <br>{{ entry[-1] }}
+          </td>
+          <!-- <td>{{ entry[2] }}</td> -->
+          <td>{{ entry[3] }}</td>
+          <td>{{ entry[4] }}</td>
+          <td>{{ entry[5] }}</td>
+          <td>{{ entry[6] }}</td>
+        </tr>
+        {% endfor %}
+      </table>
+    </div>
+    <p><a href="/dashboard?user={{ user }}">Back to Dashboard</a></p>
+  </div>
+</body>
+</html>

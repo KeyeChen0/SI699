@@ -1,0 +1,18 @@
+{"time":"2025-03-26T22:03:48.1882429-04:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"d:\\Course_works\\SI699\\model1\\src\\wandb\\run-20250326_220348-0pqvjovx\\logs\\debug-core.log"}
+{"time":"2025-03-26T22:03:48.4174491-04:00","level":"INFO","msg":"created new stream","id":"0pqvjovx"}
+{"time":"2025-03-26T22:03:48.4174491-04:00","level":"INFO","msg":"stream: started","id":"0pqvjovx"}
+{"time":"2025-03-26T22:03:48.4174491-04:00","level":"INFO","msg":"sender: started","stream_id":"0pqvjovx"}
+{"time":"2025-03-26T22:03:48.4174491-04:00","level":"INFO","msg":"writer: Do: started","stream_id":"0pqvjovx"}
+{"time":"2025-03-26T22:03:48.4174491-04:00","level":"INFO","msg":"handler: started","stream_id":"0pqvjovx"}
+{"time":"2025-03-26T22:03:48.694811-04:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-26T22:07:07.6291787-04:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-03-26T22:09:13.7620938-04:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-03-26T22:09:14.3130869-04:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-03-26T22:09:25.1434101-04:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-03-26T22:09:27.1322632-04:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-03-27T06:30:51.774938-04:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/uso_tsuki/si699_proj/0pqvjovx/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-27T06:30:54.2089262-04:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/uso_tsuki/si699_proj/0pqvjovx/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-27T12:45:37.0118514-04:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-03-27T13:14:22.6868665-04:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-03-27T14:01:23.6982935-04:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-03-27T16:11:52.1349872-04:00","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/uso_tsuki/si699_proj/0pqvjovx/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}

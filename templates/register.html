@@ -1,0 +1,124 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Register</title>
+</head>
+<body>
+  <h1>Register</h1>
+  <form action="/register" method="post">
+      <label>Username:</label>
+      <input type="text" name="username" required /><br /><br />
+      <label>Password:</label>
+      <input type="password" name="password" required /><br /><br />
+      <button type="submit">Sign Up</button>
+  </form>
+  <p><a href="/">Back to Login</a></p>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Register</title>
+  <style>
+    /* 重置部分默认样式 */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f2f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 350px;
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 1.5rem;
+      color: #333;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    label {
+      text-align: left;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      color: #555;
+    }
+    input {
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+    button {
+      padding: 0.75rem;
+      background: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+    .back-link {
+      margin-top: 1rem;
+      display: inline-block;
+      text-decoration: none;
+      color: #007bff;
+      transition: color 0.3s ease;
+    }
+    .back-link:hover {
+      color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>User register</h1>
+    <!-- <form action="/register" method="post">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required />
+
+      <label for="password">Repeat Password:</label>
+      <input type="password" id="password" name="password" required />
+
+      <button type="submit">register</button>
+    </form> -->
+    <form action="/register" method="post">
+      <label for="user_id">User ID:</label>
+      <input type="text" id="user_id" name="user_id" required />
+    
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required />
+    
+      <label for="confirm_password">Repeat Password:</label>
+      <input type="password" id="confirm_password" name="confirm_password" required />
+    
+      <button type="submit">Register</button>
+    </form>
+    
+    <a href="/" class="back-link">Back to login</a>
+  </div>
+</body>
+</html>

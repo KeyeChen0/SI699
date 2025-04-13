@@ -1,0 +1,12 @@
+C:\Users\19441\AppData\Local\Temp\ipykernel_34140\976836885.py:9: DtypeWarning: Columns (0,1) have mixed types. Specify dtype option on import or set low_memory=False.
+Using device: cuda
+Using device: cuda
+Using device: cuda
+Using device: cuda
+Using device: cuda
+  data = pd.read_csv('eval_results.csv', header=None, names=['probability', 'label'])
+C:\Users\19441\AppData\Local\Temp\ipykernel_34140\3985224546.py:87: FutureWarning:
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.barplot(x=list(metrics.keys()), y=list(metrics.values()), palette="viridis")

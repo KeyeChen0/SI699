@@ -1,0 +1,14 @@
+{"time":"2025-03-29T16:00:50.7650874-04:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"d:\\Course_works\\SI699\\model1\\src\\wandb\\run-20250329_160050-krjk3jeh\\logs\\debug-core.log"}
+{"time":"2025-03-29T16:00:50.9975759-04:00","level":"INFO","msg":"created new stream","id":"krjk3jeh"}
+{"time":"2025-03-29T16:00:50.9975759-04:00","level":"INFO","msg":"stream: started","id":"krjk3jeh"}
+{"time":"2025-03-29T16:00:50.9975759-04:00","level":"INFO","msg":"handler: started","stream_id":"krjk3jeh"}
+{"time":"2025-03-29T16:00:50.9975759-04:00","level":"INFO","msg":"writer: Do: started","stream_id":"krjk3jeh"}
+{"time":"2025-03-29T16:00:50.9975759-04:00","level":"INFO","msg":"sender: started","stream_id":"krjk3jeh"}
+{"time":"2025-03-29T16:00:51.1362619-04:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-29T16:04:11.6242544-04:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-03-29T16:04:34.4590523-04:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-03-29T16:04:35.012838-04:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-03-29T16:05:23.3957015-04:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-03-29T16:05:24.9747149-04:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-03-29T16:05:39.8496903-04:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-03-29T16:05:40.9641797-04:00","level":"INFO","msg":"Pausing system monitor"}
